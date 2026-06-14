@@ -104,6 +104,36 @@
       font-weight: 500;
     }
 
+    /* ── OFFER TEASER ── */
+    .offer-teaser {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      max-width: 480px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 1.95s forwards;
+    }
+
+    .offer-pill {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: clamp(11px, 1.4vw, 13px);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--gold);
+      padding: 5px 12px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .offer-text {
+      font-size: clamp(13px, 1.7vw, 15px);
+      color: var(--dim);
+      line-height: 1.4;
+    }
+
     /* ── FORM ── */
     .form-wrap {
       opacity: 0;
@@ -335,11 +365,16 @@
       <p class="subhead">
         You have been squeezing into the wrong size your whole life.<br />
         <strong>No more.</strong> Premium low-cut socks built for large feet&nbsp;&mdash; Men's&nbsp;13&nbsp;to&nbsp;23, Women's&nbsp;14.5&nbsp;to&nbsp;24.5.
-        Natural materials. Bold designs. The brand that should have existed years ago.
+        Three statement styles. Worn together. Read across the room.
       </p>
 
+      <div class="offer-teaser">
+        <span class="offer-pill">The 3-Pack</span>
+        <span class="offer-text">Three styles, one box. The way they were meant to be worn.</span>
+      </div>
+
       <div class="form-wrap">
-        <label class="form-label" for="email-input">Be first to know when we launch</label>
+        <label class="form-label" for="email-input">Be first when the drop goes live</label>
         <div class="form-row" id="form-row">
           <input
             type="email"
